@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <main id="calculator">
+        <div id="display">
+          <div id="result-operator">
+            <h3 id="result"></h3>
+            <p id="operator"></p>
+          </div>
+          <input id="secondary-value" placeholder="0" type="text" />
+        </div>
+        <div id="number-holders">
+          <button id="reset">c</button>
+          <button id="remainder">%</button>
+          <button id="division">÷</button>
+          <button id="delete">
+            <img src="./assets/icons/delete.svg" alt="" />
+          </button>
+
+          <button id="btn-1">1</button>
+          <button id="btn-2">2</button>
+          <button id="btn-3">3</button>
+          <button id="mulitply">×</button>
+          <button id="btn-4">4</button>
+          <button id="btn-5">5</button>
+          <button id="btn-6">6</button>
+          <button id="subtract">-</button>
+          <button id="btn-7">7</button>
+          <button id="btn-8">8</button>
+          <button id="btn-9">9</button>
+          <button id="addition">+</button>
+          <button id="btn-0">0</button>
+          <button id="dot">•</button>
+          <button id="equal">=</button>
+        </div>
+      </main>
+      <aside id="history">
+        <h3>Your History</h3>
+        <div id="filter-container">
+          <h3>Filter by</h3>
+          <div>
+            <span id="filter-addition">+</span>
+            <span id="filter-subtract">-</span>
+            <span id="filter-multiply">×</span>
+            <span id="filter-division">÷</span>
+            <span id="filter-remainder">%</span>
+          </div>
+        </div>
+        <div id="calculation-container">
+          <p id="para">No calculation to show</p>
+        </div>
+      </aside>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

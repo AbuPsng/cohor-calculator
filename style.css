@@ -1,0 +1,243 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+section {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(45, 198, 198), rgb(140, 102, 255));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+#calculator {
+  width: 270px;
+  max-height: 550px;
+  border: 3px solid black;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: black;
+  box-shadow: 0px 0px 30px 3px rgb(19, 242, 179);
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 20px;
+  gap: 2px;
+  align-items: end;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+#result-operator {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  align-items: center;
+  gap: 5px;
+}
+
+#result {
+  width: 100%;
+  background: transparent;
+  border: 0px;
+  height: 20px;
+  color: white;
+  text-align: end;
+  font-size: 18px;
+}
+
+#secondary-value {
+  width: 100%;
+  background: transparent;
+  border: 0px;
+  color: white;
+  text-align: end;
+  font-size: 32px;
+}
+
+#secondary-value:focus {
+  outline: none;
+}
+
+#number-holders {
+  width: 100%;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 50px);
+}
+
+#number-holders button {
+  border-radius: 100%;
+  background: #333333;
+  border: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#number-holders button:hover {
+  background-color: rgb(110, 108, 108);
+}
+
+#number-holders button:nth-child(1),
+#number-holders button:nth-child(2),
+#number-holders button:nth-child(3) {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+#number-holders button:nth-child(1):hover,
+#number-holders button:nth-child(2):hover,
+#number-holders button:nth-child(3):hover {
+  background-color: rgb(209, 209, 209);
+}
+
+#number-holders button:nth-child(4),
+#number-holders button:nth-child(8),
+#number-holders button:nth-child(12),
+#number-holders button:nth-child(16) {
+  background-color: rgb(201, 125, 11);
+}
+
+#number-holders button:nth-child(4):hover,
+#number-holders button:nth-child(8):hover,
+#number-holders button:nth-child(12):hover,
+#number-holders button:nth-child(16):hover {
+  background-color: #ff9f0c;
+}
+
+#number-holders button:nth-child(4) {
+  background: rgb(156, 21, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#number-holders button:nth-child(4):hover {
+  background: rgb(255, 0, 0);
+}
+
+#number-holders button:nth-child(19) {
+  background: rgb(53, 74, 157);
+  border-radius: 5px;
+  font-size: 26px;
+  grid-column: span 2;
+}
+
+#number-holders button:nth-child(19):hover {
+  background: rgb(101, 68, 249);
+}
+
+#history {
+  min-height: 440px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 5px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: #000000;
+  color: rgb(154, 154, 154);
+  box-shadow: 0px 0px 30px 3px rgb(19, 242, 179);
+}
+
+#history h3 {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+#filter-container {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 0px 8px 1px rgb(61, 104, 185);
+  border-radius: 5px;
+}
+
+#filter-container h3 {
+  font-size: 20px;
+}
+
+#filter-container span {
+  padding: 2px 14px;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+  border: 1px solid rgb(61, 104, 185);
+}
+
+#filter-container span:hover {
+  background: rgb(0, 148, 222);
+  color: #ffffff;
+}
+
+#calculation-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+#para {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+#calculation-holder {
+  width: 100%;
+  border: 2px solid rgb(34, 35, 47);
+  padding: 8px 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  cursor: pointer;
+}
+
+#calculation-holder:hover {
+  background: rgb(36, 36, 36);
+  color: rgb(197, 197, 197);
+}
+
+#calculation-holder button {
+  font-weight: 600;
+  padding: 4px 14px;
+  margin-top: -3px;
+  background: rgb(156, 21, 21);
+  border-radius: 6px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#calculation-holder button:hover {
+  background: rgb(255, 0, 0);
+}
