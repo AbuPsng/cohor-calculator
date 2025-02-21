@@ -194,7 +194,7 @@ function changeViewAccordingToHistoryData() {
 
 //put number and operator of selected calculation
 function putValuesAndOperatorOfCalculation(number1, number2, operator) {
-  selectOperator = operator;
+  selectOperator(operator);
   resultValue = number1;
   userInputElement.value = number2;
   resultElement.innerText = resultValue;
